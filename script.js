@@ -22,7 +22,7 @@ const settingOptions = [
 {
     language: "Polish",
     categories: ["1000 words", "100 words", "colors", "animals"],
-    wordbanks: [polishWords.words, polishWords.words.slice(0,100)],
+    wordbanks: [polishWords.words, polishWords.words.slice(0,100),polishColors],
     translations: ["pol", "eng"]
 }
 ]
