@@ -92,6 +92,7 @@ function newWord() {
     if (this) {
         this.style.backgroundColor = "white"
     }
+    definitionList = definition.slice()
     choicesCards.forEach(card => card.style.pointerEvents = "")
     chosenWord = wordBank[Math.floor(Math.random()*wordBank.length)];
     wordCard.innerHTML = `<p>${chosenWord}</p>`
@@ -103,6 +104,7 @@ function newWord() {
     
 function multipleChoice() {
     let [choice2, choice3, choice4] = [wrongChoice(definitionList),wrongChoice(definitionList),wrongChoice(definitionList)]
+    console.log(definitionList)
     choices = shuffle(shuffle(shuffle([correctAnswer, choice2, choice3, choice4])))
     choicesCards.forEach((card, i) => card.innerHTML = choices[i])
     wordBank.splice(wordBank.indexOf(chosenWord), 1)
