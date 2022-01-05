@@ -1,0 +1,271 @@
+.row {
+  /* background-color: aqua; */
+}
+.score-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: xx-large;
+  text-align: center;
+}
+.correct, .incorrect {
+  height: 250px;
+  width: 300px;
+  margin: 15px;
+  border-radius: 5%;
+  background-color: rgba(220, 220, 220, 0.171);
+}
+.statistics {
+  font-family: 'Oswald', sans-serif;
+  height: 250px;
+  width: 630px;
+  margin: 15px;
+  border-radius: 5%;
+  background-color: rgba(220, 220, 220, 0.171);
+}
+.statistics-row {
+  padding: 10px 0 10px;
+  font-weight: 400;
+  font-size: 28px;
+}
+.new-game-container, .start-another-game-container {
+  display: flex;
+  justify-content: center;
+}
+.begin-new-game, .begin-another-game {
+  margin-top: 15%;
+  padding: 15px 25px 15px 25px;
+  align-items: center;
+  list-style: none;
+  text-decoration: none;
+  display: inline-flex;
+  border-color: black;
+  border-width: 0;
+  border-style: solid;
+  border-radius: 20px;
+  background-color: rgb(83, 137, 161);
+  color: aliceblue;
+  font-size: 48px;
+}
+.begin-another-game {
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+.begin-new-game:hover, .begin-another-game:hover {
+  background-color: rgb(135, 179, 197);
+}
+.word {
+  text-align: center;
+  width: 25%;
+  font-size:xx-large;
+  font-family: 'Cabin', sans-serif;
+  font-weight: 700;
+  font-style:italic;
+}
+.cards {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    text-align: center;
+    width: 25%;
+  }
+  
+  /* On mouse-over, add a deeper shadow */
+  .cards:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+
+  }
+  
+  /* Add some padding inside the card container */
+  .container-game {
+    padding: 2px 16px;
+    display: flex;
+    justify-content: center;
+  }
+  .cards-row, .set-row, .set-title{
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+  }
+  .set-title {
+    font-family: 'Cabin', sans-serif;
+    font-weight: 600;
+    
+  }
+  .set-language, .set-category, .set-game, .no-language-set {
+    margin: 10px 15px 10px 15px;
+    padding: 15px 25px 15px 25px;
+    align-items: center;
+    list-style: none;
+    text-decoration: none;
+    display: inline-flex;
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 8px;
+    background-color: white;
+    font-size: 24px;
+  }
+  .set:hover:not(.active) {
+    background-color: rgb(245, 241, 241);
+  }
+  .start-game {
+    margin-top: 45px;
+    padding: 15px 25px 15px 25px;
+    align-items: center;
+    list-style: none;
+    text-decoration: none;
+    display: inline-flex;
+    border-color: black;
+    border-width: 0px;
+    background-color: rgb(221, 168, 168);
+    font-size: 24px;
+    border-radius: 35px;
+  }
+  .start-game:hover {
+    background-color: rgb(221, 168, 168, 0.8);
+  }
+  .cards {
+      padding: 2%;
+      margin: 25px;
+  }
+  table {
+    width: 95%;
+      margin-left: 20px;
+  }
+  tr {
+    vertical-align: top;
+  }
+.game {
+    margin: 0 auto;
+    max-width: 1400px;
+    width: 100%;
+}
+.gameover {
+    text-align: center;
+    font-size: 24px;
+}
+.active {
+  background-color: rgb(135, 175, 228);
+}
+.guess-word {
+  border-radius: 20px;
+  height: 36px;
+  font-size: 16px;
+  text-indent: 15px;
+  
+}
+.guess-word-btn {
+  border-width: 0px;
+  background-color: rgb(155, 204, 155);
+  font-size: 24px;
+  padding: 7px 11px 7px 11px;
+  border-radius: 50%;
+  position: relative;
+  top: 5px;
+}
+
+.tries {
+  margin-top: 15px;
+  margin-left: 40%;
+  text-align: left;
+  font-size: 24px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 9rem;
+  width: 100%;
+  padding: 0 6rem;
+  z-index: 100;
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  color: #444;
+  line-height: 1.9;
+  font-size: 62.5%;
+}
+/* nav and stickly class at the same time */
+.nav.sticky {
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.95);
+}
+
+.nav__logo {
+  height: 4.5rem;
+  transition: all 0.3s;
+}
+
+.nav__links {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.nav__item {
+  margin-left: 4rem;
+}
+
+.nav__link:link,
+.nav__link:visited {
+  font-size: 1.7rem;
+  font-weight: 400;
+  color: inherit;
+  text-decoration: none;
+  display: block;
+  transition: all 0.3s;
+}
+
+.nav__link--btn:link,
+.nav__link--btn:visited {
+  padding: 0.8rem 2.5rem;
+  border-radius: 3rem;
+  background-color: var(--color-primary);
+  color: #222;
+}
+
+.nav__link--btn:hover,
+.nav__link--btn:active {
+  color: inherit;
+  background-color: var(--color-primary-darker);
+  color: #333;
+}
+.warning {
+  color: red;
+  font-weight: bold;
+}
+.unpop {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 2s, opacity 2s linear;
+}
+.modal-game {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 60rem;
+  background-color: #f3f3f3;
+  padding: 3rem 4rem;
+  box-shadow: 0 4rem 6rem rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  transition: all 0.5s;
+  width: 805px;
+}
+.close-modal {
+  text-align: end;
+  position: relative;
+  left: 2.9rem;
+  bottom:2rem;
+  cursor: pointer;
+}
+.hidden {
+  display: none;
+}
+.no-language-set {
+  border-style: none;
+  border-radius: 0;
+}
