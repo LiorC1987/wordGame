@@ -104,15 +104,10 @@
     font-weight: 600;
     
   }
-  .language {
-    display: block;
-    width: 330px;
-    margin-left: auto;
-    margin-right: auto;
-  }
+
   .set-language, .set-category, .set-game, .no-language-set {
     margin: 10px 15px 10px 15px;
-    padding: 15px 25px 15px 25px;
+    padding: 5px 15px 5px 15px;
     align-items: center;
     list-style: none;
     text-decoration: none;
@@ -284,6 +279,13 @@
   .close-modal {
     left: 1rem;
     bottom: 1rem;
+  }
+  .language, .category {
+    display: block;
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
   }
 }
 .close-modal {
