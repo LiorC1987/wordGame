@@ -28,7 +28,7 @@ const settingOptions = [
 {
     language: "Italian",
     categories: ["1000 words", "100 words"],
-    wordbanks: [polishWords.words, polishWords.words.slice(0,100),polishColors],
+    wordbanks: [italianWords.words, italianWords.words.slice(0,100),polishColors],
     translations: ["ita", "eng"]
 }
 ]
