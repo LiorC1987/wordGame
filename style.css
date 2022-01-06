@@ -1,13 +1,27 @@
+:root {
+  --color-primary: #5ec576;
+  --color-secondary: #ffcb03;
+  --color-tertiary: #ff585f;
+  --color-primary-darker: #4bbb7d;
+  --color-secondary-darker: #ffbb00;
+  --color-tertiary-darker: #fd424b;
+  --color-primary-opacity: #5ec5763a;
+  --color-secondary-opacity: #ffcd0331;
+  --color-tertiary-opacity: #ff58602d;
+  --gradient-primary: linear-gradient(to top left, #567fbd, #8ab5dd);
+  --gradient-secondary: linear-gradient(to top left, #ffb003, #ffcb03);
+}
 .row {
   /* background-color: aqua; */
 }
 .score-title {
+  margin-top: 10px;
   font-family: 'Montserrat', sans-serif;
   font-size: xx-large;
   text-align: center;
 }
 .correct, .incorrect {
-  height: 250px;
+  height: 300px;
   width: 300px;
   margin: 15px;
   border-radius: 5%;
@@ -15,8 +29,8 @@
 }
 .statistics {
   font-family: 'Oswald', sans-serif;
-  height: 250px;
-  width: 630px;
+  height: 300px;
+  width: 550px;
   margin: 15px;
   border-radius: 5%;
   background-color: rgba(220, 220, 220, 0.171);
@@ -89,6 +103,12 @@
     font-family: 'Cabin', sans-serif;
     font-weight: 600;
     
+  }
+  .language {
+    display: block;
+    width: 330px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .set-language, .set-category, .set-game, .no-language-set {
     margin: 10px 15px 10px 15px;
@@ -247,13 +267,24 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  max-width: 60rem;
+
   background-color: #f3f3f3;
   padding: 3rem 4rem;
   box-shadow: 0 4rem 6rem rgba(0, 0, 0, 0.3);
   z-index: 1000;
   transition: all 0.5s;
   width: 805px;
+}
+@media screen and (max-width: 600px) {
+  .modal-game {
+    width: 550px;
+    max-width: 40rem;
+    padding: 2rem 2rem;
+  }
+  .close-modal {
+    left: 1rem;
+    bottom: 1rem;
+  }
 }
 .close-modal {
   text-align: end;
@@ -268,4 +299,21 @@
 .no-language-set {
   border-style: none;
   border-radius: 0;
+}
+.highlight {
+  position: relative;
+}
+
+.highlight::after {
+  display: block;
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.7;
+  transform: scale(1.07, 1.05) skewX(-15deg);
+  background-image: var(--gradient-primary);
 }

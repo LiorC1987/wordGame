@@ -79,7 +79,7 @@ const startNewGame = document.querySelector(".begin-new-game")
 const startAnotherGame = document.querySelector(".begin-another-game")
 const settingModal = document.querySelector(".modal-game")
 const closeModal = document.querySelector(".close-modal-screen")
-const statistics = document.querySelector(".statistics")
+const statistics = document.querySelector(".statistics-data")
 triesDiv.innerHTML = "🖤".repeat(tries)
 
 const shuffle = arg => arg.sort(() => Math.random() - 0.5)
