@@ -11,9 +11,7 @@
   --gradient-primary: linear-gradient(to top left, #567fbd, #8ab5dd);
   --gradient-secondary: linear-gradient(to top left, #ffb003, #ffcb03);
 }
-.row {
-  /* background-color: aqua; */
-}
+
 .score-title {
   margin-top: 10px;
   font-family: 'Montserrat', sans-serif;
@@ -21,24 +19,40 @@
   text-align: center;
 }
 .correct, .incorrect {
-  height: 300px;
+  height: 380px;
   width: 300px;
   margin: 15px;
   border-radius: 5%;
-  background-color: rgba(220, 220, 220, 0.171);
+  background-color: rgba(220, 220, 220, 0.5);
 }
 .statistics {
-  font-family: 'Oswald', sans-serif;
-  height: 300px;
+  height: 380px;
   width: 550px;
   margin: 15px;
   border-radius: 5%;
-  background-color: rgba(220, 220, 220, 0.171);
+  background-color: rgba(220, 220, 220, 0.5);
 }
-.statistics-row {
-  padding: 10px 0 10px;
-  font-weight: 400;
-  font-size: 28px;
+.statistics-box {
+  background-color: white;
+  border-radius: 15px;
+  padding: 15px 0 15px 0;
+  border: 5px solid #ededed;
+}
+.stats-title, .stats-big-data {
+  font-family: 'Oswald', sans-serif;
+  color: #12384a;
+  text-align: center;
+  
+}
+.stats-big-data {
+  font-size: 48px;
+  font-weight: 700;
+}
+.stats-title {
+  font-size:16px;
+}
+.stat-row {
+  padding: 5px 10px;
 }
 .new-game-container, .start-another-game-container {
   display: flex;
@@ -262,13 +276,20 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-
   background-color: #f3f3f3;
   padding: 3rem 4rem;
   box-shadow: 0 4rem 6rem rgba(0, 0, 0, 0.3);
   z-index: 1000;
   transition: all 0.5s;
   width: 805px;
+}
+.modal-definition {
+  position: fixed;
+  width: fit-content;
+  z-index: 100;
+  background-color: white;
+  border:2px solid red;
+  padding: 5px 10px 5px 5px;
 }
 @media screen and (max-width: 600px) {
   .modal-game {
@@ -318,4 +339,17 @@
   opacity: 0.7;
   transform: scale(1.07, 1.05) skewX(-15deg);
   background-image: var(--gradient-primary);
+}
+.vocab-div-new-game {
+  position: absolute;
+  top: 755px;
+}
+.game-over {
+  font-family: 'Lora', serif;
+  text-align: center;
+  font-size: x-large;
+  background-color: #9e3f44;
+  color: whitesmoke;
+  margin: 0 26%;
+  padding: 10px 0;
 }
