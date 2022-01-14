@@ -11,7 +11,18 @@
   --gradient-primary: linear-gradient(to top left, #567fbd, #8ab5dd);
   --gradient-secondary: linear-gradient(to top left, #ffb003, #ffcb03);
 }
-
+body {
+  background-color: #ffe9eb;
+}
+.display-right-answer {
+  text-align: center;
+  font-size: larger;
+  font-family: 'Oswald', sans-serif;
+}
+.display-answer-answer {
+  font-size: 48px;
+  font-weight: bold;
+}
 .score-title {
   margin-top: 10px;
   font-family: 'Montserrat', sans-serif;
@@ -23,14 +34,14 @@
   width: 300px;
   margin: 15px;
   border-radius: 5%;
-  background-color: rgba(220, 220, 220, 0.5);
+  background-color: rgba(220, 220, 220, 0.75);
 }
 .statistics {
   height: 380px;
   width: 550px;
   margin: 15px;
   border-radius: 5%;
-  background-color: rgba(220, 220, 220, 0.5);
+  background-color: rgba(220, 220, 220, 0.75);
 }
 .statistics-box {
   background-color: white;
@@ -84,9 +95,9 @@
   text-align: center;
   width: 25%;
   font-size:xx-large;
-  font-family: 'Cabin', sans-serif;
-  font-weight: 700;
-  font-style:italic;
+  font-family: 'Lora', sans-serif;
+  font-weight: 600;
+  /* font-style:italic; */
 }
 .cards {
     /* Add shadows to create the "card" effect */
@@ -94,6 +105,7 @@
     transition: 0.3s;
     text-align: center;
     width: 25%;
+    background-color: white;
   }
   
   /* On mouse-over, add a deeper shadow */
@@ -291,24 +303,7 @@
   border:2px solid red;
   padding: 5px 10px 5px 5px;
 }
-@media screen and (max-width: 600px) {
-  .modal-game {
-    width: 550px;
-    max-width: 40rem;
-    padding: 2rem 2rem;
-  }
-  .close-modal {
-    left: 1rem;
-    bottom: 1rem;
-  }
-  .language, .category {
-    display: block;
-    width: 450px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-  }
-}
+
 .close-modal {
   text-align: end;
   position: relative;
@@ -352,4 +347,33 @@
   color: whitesmoke;
   margin: 0 26%;
   padding: 10px 0;
+}
+
+@media screen and (max-width: 600px) {
+  .modal-game {
+    width: 550px;
+    max-width: 40rem;
+    padding: 2rem 2rem;
+  }
+  .close-modal {
+    left: 1rem;
+    bottom: 1rem;
+  }
+  .language, .category {
+    display: block;
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  .cards {
+    width: 75%;
+  }
+  .statistics {
+    margin: 0;
+  }
+  .row {
+    justify-content:center;
+    align-items: center;
+  }
 }
